@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">   
+  <title>Registration Form</title>
+  <!-- <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: lightslategrey;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container input[type="password"],
+    .container input[type="date"],
+    .container input[type="checkbox"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .container input[type="text"]::placeholder,
+    .container input[type="email"]::placeholder,
+    .container input[type="password"]::placeholder,
+    .container input[type="date"]::placeholder {
+      font-size: 14px;
+    }
+
+    .container .name-fields {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .container .name-fields input[type="text"] {
+      width: 48%;
+    }
+
+    .signupbtn {
+      background-color: lightgreen;
+      position: relative;
+      text-align: center;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .signupbtn:hover {
+      background-color: darkolivegreen;
+      color: white;
+    }
+  </style> -->
+</head>
+
+<body>
+  <h1 style="color: brown; text-align: center;">EasyShop</h1>
+  <h3 style="color: black; text-align: center;">Discover endless choices, unbeatable deals, and effortless convenience
+  </h3>
+  <h3 style="color: black; text-align: center;">at your fingertips with online shopping websites</h3>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form>
+      <div class="name-fields">
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" style="width: 100%;"
+            required>
+        </div>
+        <div>
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" style="width: 100%;"
+            required>
+        </div>
+      </div>
+
+      <label for="mobile-email">Mobile Number / Email ID</label>
+      <input type="text" id="mobile-email" name="mobile-email" placeholder="Enter your mobile number or email ID"
+        style="width: 100%;" required>
+
+      <label for="password">Password</label>
+      <input oncopy="return false" type="password" id="password" name="password" placeholder="Enter your password"
+        required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" placeholder="Enter your date of birth" required>
+
+      <div style="text-align: center;">
+        <a href="products.html" class="signupbtn">Sign up</a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

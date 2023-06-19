@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <link rel="stylesheet" href="style.css">   -->
+  <title>Login Form</title>
+  <style>
+    .container1 {
+      max-width: 400px;
+      margin: 0 auto;
+      /* Center align the container horizontally */
+      margin-top: 60px;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: lightslategrey;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container1 h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container1 label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .container1 input[type="text"],
+    .container1 input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .container1 input[type="text"]::placeholder,
+    .container1 input[type="password"]::placeholder {
+      font-size: 14px;
+    }
+
+    .loginherebtn {
+      display: block;
+      margin: 0 auto;
+      /* Center align the button horizontally */
+      background-color: lightgreen;
+      color: black;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      font-size: 14px;
+      max-width: 100px;
+      /* Adjust the max-width to change the button width */
+    }
+
+    .loginherebtn:hover {
+      background-color: darkolivegreen;
+      color: white;
+    }
+
+    .create-account-btn {
+      display: block;
+      margin: 0 auto;
+      /* Center align the button horizontally */
+      background-color: lightcoral;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 20px;
+      max-width: 200px;
+      /* Adjust the max-width to change the horizontal size */
+    }
+
+    .create-account-btn:hover {
+      background-color: paleturquoise;
+      color: black;
+    }
+  </style> 
+</head>
+
+<body>
+  <h1 style="color: brown;text-align: center;">EasyShop</h1>
+  <h3 style="color: black;text-align: center;">Indulge in a seamless shopping experience anytime, anywhere, with the
+    power to </h3>
+  <h3 style="color: black;text-align: center;">compare prices, read reviews, and receive doorstep delivery - all in
+    just a few clicks</h3>
+  <div class="container1">
+    <h2>Login Form</h2>
+    <form>
+      <label for="mobile">Mobile Number</label>
+      <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+      <label for="password">Password</label>
+      <input oncopy="return false" type="password" id="password" name="password" placeholder="Enter your password"
+        required>
+      <a href="products.html" class="loginherebtn">Log in</a>
+    </form>
+  </div>
+  <a href="registrationform.html" class="create-account-btn">Create new account</a>
+</body>
+
+</html>

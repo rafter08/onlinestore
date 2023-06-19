@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <style>
+        input.solid {
+            border-style: solid;
+        }
+
+        body {
+            background-image: url('bg2.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            width: 50%;
+            text-align: center;
+            border: 4px solid black;
+            padding: 16px;
+            border-radius: 30px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 8px 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .loginherebtn {
+            text-decoration: none;
+            margin-top: 16px;
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Login Page</h1>
+        <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required><br>
+        <input oncopy="return false" type="password" id="password" name="password" placeholder="Enter your password"
+            required><br><br>
+        <button type="submit" class="loginherebtn">Log in</button>
+    </form>
+</body>
+
+</html>

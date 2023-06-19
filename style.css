@@ -1,0 +1,598 @@
+/*................................navbar...............................*/
+body {
+  margin: 0;
+  background-image: url('bg5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: #292929;
+  position: fixed;
+  overflow: hidden;
+  padding: 10px;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Align contents to the left and right */
+  height: 50px;
+  /* Decrease the navbar height */
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.navbar .search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.navbar input[type="text"] {
+  padding: 8px;
+  /* Decrease the padding of the search box */
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 250px;
+  /* Increase the width of the search box */
+  font-size: 14px;
+  /* Decrease the font size of the search box */
+}
+
+.navbar .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar .logo img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.navbar .logo .store-text {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/*..................home......................*/
+
+::placeholder {
+  color: black;
+  margin-left: 30;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.center1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-container {
+  width: 50%;
+  position: relative;
+}
+
+.input-container input[type="text"] {
+  width: 100%;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: lightslategray;
+}
+
+.login-register-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.login-link,
+.register-link,
+.contactus-link {
+  display: inline-block;
+  padding: 10px;
+  color: black;
+  background-color: paleturquoise;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.login-link:hover,
+.register-link:hover,
+.contactus-link:hover {
+  background-color: lightsalmon;
+}
+
+h2 {
+  margin: 2px auto 2px auto;
+}
+
+
+/*..............................login.........................*/
+.container1 {
+  max-width: 400px;
+  margin: 0 auto;
+  /* Center align the container horizontally */
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: lightslategrey;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container1 label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.container1 input[type="text"],
+.container1 input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.container1 input[type="text"]::placeholder,
+.container1 input[type="password"]::placeholder {
+  font-size: 14px;
+}
+
+.loginherebtn {
+  display: block;
+  margin: 0 auto;
+  /* Center align the button horizontally */
+  background-color: lightgreen;
+  color: black;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  max-width: 100px;
+  /* Adjust the max-width to change the button width */
+}
+
+.loginherebtn:hover {
+  background-color: darkolivegreen;
+  color: white;
+}
+
+.create-account-btn {
+  display: block;
+  margin: 0 auto;
+  /* Center align the button horizontally */
+  background-color: lightcoral;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 200px;
+  /* Adjust the max-width to change the horizontal size */
+}
+
+.create-account-btn:hover {
+  background-color: paleturquoise;
+  color: black;
+}
+
+
+/*......................register............................*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: lightslategrey;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container input[type="date"],
+.container input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.container input[type="text"]::placeholder,
+.container input[type="email"]::placeholder,
+.container input[type="password"]::placeholder,
+.container input[type="date"]::placeholder {
+  font-size: 14px;
+}
+
+.container .name-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .name-fields input[type="text"] {
+  width: 48%;
+}
+
+.signupbtn {
+  background-color: lightgreen;
+  position: relative;
+  text-align: center;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.signupbtn:hover {
+  background-color: darkolivegreen;
+  color: white;
+}
+
+/*.........................aboutus..............................*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-section img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-info,
+.address-section,
+.social-links {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.contact-info p,
+.address-section p {
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #3b5998;
+  /* Facebook color */
+}
+
+.social-links a.facebook:before {
+  content: "\f09a";
+  /* Font Awesome Facebook icon */
+  font-family: "Font Awesome 5 Brands";
+  font-size: 24px;
+  color: #3b5998;
+  /* Facebook color */
+}
+
+.social-links a.instagram:before {
+  content: "\f16d";
+  /* Font Awesome Instagram icon */
+  font-family: "Font Awesome 5 Brands";
+  font-size: 24px;
+  color: #e4405f;
+  /* Instagram color */
+}
+
+
+/*...................contactus........................*/
+.container2 {
+  max-width: 400px;
+  margin: 0 auto;
+  /* Center align the container horizontally */
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 20px;
+  background-color: lightslategrey;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container2 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container2 label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.container2 input[type="text"],
+.container2 input[type="email"],
+.container2 textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.container2 input[type="text"]::placeholder,
+.container2 input[type="email"]::placeholder,
+.container2 textarea {
+  font-size: 14px;
+}
+
+.container2 textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.container2 button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  /* Center align the button horizontally */
+  background-color: lightgreen;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.container2 button[type="submit"]:hover {
+  background-color: darkolivegreen;
+  color: white;
+}
+
+/*...................products......................*/
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #292929;
+  position: fixed;
+  overflow: hidden;
+  padding: 10px;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Align contents to the left and right */
+  height: 50px;
+  /* Decrease the navbar height */
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.navbar .search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.navbar input[type="text"] {
+  padding: 8px;
+  /* Decrease the padding of the search box */
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 250px;
+  /* Increase the width of the search box */
+  font-size: 14px;
+  /* Decrease the font size of the search box */
+}
+
+.navbar .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar .logo img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.navbar .logo .store-text {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.exclusive-offer-text {
+  margin-top: 90px;
+  /* Adjust the margin as per your preference */
+  text-align: center;
+}
+
+.exclusive-offer-text {
+  background-color: white;
+  color: blue;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  /* Add margin-bottom to create a gap between the text and the items */
+}
+
+.exclusive-offer-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  /* Remove any margin around the heading */
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
+  /* Adjust the image height based on the aspect ratio */
+  margin-bottom: 10px;
+}
+
+.item h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.item p {
+  font-size: 12px;
+  margin: bottom 2px;
+  ;
+  color: brown;
+}

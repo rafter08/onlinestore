@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <style>
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #292929;
+            position: fixed;
+            overflow: hidden;
+            padding: 10px;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* Align contents to the left and right */
+            height: 50px;
+            /* Decrease the navbar height */
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .navbar .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .navbar input[type="text"] {
+            padding: 8px;
+            /* Decrease the padding of the search box */
+            margin: 8px 0;
+            box-sizing: border-box;
+            width: 250px;
+            /* Increase the width of the search box */
+            font-size: 14px;
+            /* Decrease the font size of the search box */
+        }
+
+        .navbar .search-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #ccc;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .navbar .logo img {
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+
+        .navbar .logo .store-text {
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .exclusive-offer-text {
+            margin-top: 90px;
+            /* Adjust the margin as per your preference */
+            text-align: center;
+        }
+
+        .exclusive-offer-text {
+            background-color: white;
+            color: blue;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            /* Add margin-bottom to create a gap between the text and the items */
+        }
+
+        .exclusive-offer-text h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            /* Remove any margin around the heading */
+        }
+
+        .item-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: whitesmoke;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .item img {
+            width: 300px;
+            height: 200px;
+            /* Adjust the image height based on the aspect ratio */
+            margin-bottom: 10px;
+        }
+
+        .item h2 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        .item p {
+            font-size: 12px;
+            margin: bottom 2px;
+            ;
+            color: brown;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> <!-- Replace "your-image.png" with the path to your image file -->
+            <div class="store-text">EasyShop</div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search products here..." style="width: 300px; font-size: 12px;">
+            <!-- Increased width of the search box -->
+            <i class="fa fa-search search-icon" style="font-size: 18px;"></i>
+        </div>
+        <a href="http://127.0.0.1:5500/home.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="http://127.0.0.1:5500/loginform.html">Login</a>
+        <a href="http://127.0.0.1:5500/registrationform.html">Register</a>
+        <a href="http://127.0.0.1:5500/aboutus.html">About Us</a>
+        <a href="http://127.0.0.1:5500/contactus.html">Contact Us</a>
+    </div>
+
+    <div class="exclusive-offer-text">
+        <h2>Exclusive Offers for You</h2>
+    </div>
+
+    <div class="item-container">
+        <div class="item">
+            <img src="p1.jpg" alt="Item 1">
+            <h3>Royal Enfield</h3>
+            <p>Iconic motorcycles that captivate with style and affordability starting from $4,999.</p>
+        </div>
+        <div class="item">
+            <img src="p2.jpg" alt="Item 2">
+            <h3>Realme gt</h3>
+            <p>Power-packed performance and flagship features at an affordable price, starting from $399.</p>
+        </div>
+        <div class="item">
+            <img src="p3.jpg" alt="Item 3">
+            <h3>Television</h3>
+            <p> Immersive entertainment at your fingertips, starting from $299.</p>
+        </div>
+        <div class="item">
+            <img src="p4.jpg" alt="Item 4">
+            <h3>Refrigerator</h3>
+            <p>Keeps your food fresh and cool, starting from $499.</p>
+        </div>
+        <div class="item">
+            <img src="p5.jpg" alt="Item 5">
+            <h3>Washing machine</h3>
+            <p>Effortless cleaning and convenience, starting from $399, making laundry attractive.</p>
+        </div>
+        <div class="item">
+            <img src="p6.jpg" alt="Item 6">
+            <h3>Mercedes</h3>
+            <p>Luxury and performance redefined, starting from $40,000, the epitome of elegance.</p>
+        </div>
+        <div class="item">
+            <img src="p7.jpg" alt="Item 7">
+            <h3>Formals</h3>
+            <p> Elevate your style with sophistication, starting from $29, a timeless wardrobe essential.</p>
+        </div>
+        <div class="item">
+            <img src="p8.jpg" alt="Item 8">
+            <h3>Ladies wear</h3>
+            <p> Embrace fashion with grace and affordability, starting from $39, empowering elegance.</p>
+        </div>
+        <div class="item">
+            <img src="p9.jpg" alt="Item 9">
+            <h3>Gifts</h3>
+            <p>Thoughtful gestures that bring joy, starting from $19, priceless expressions of love.</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
