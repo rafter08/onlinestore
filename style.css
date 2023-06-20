@@ -155,14 +155,34 @@ h2 {
 
 
 /*..............................login.........................*/
+
+.container5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.left-div {
+  flex: 1;
+  text-align: center;
+}
+
+.right-div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .container1 {
-  max-width: 400px;
+  width: 450px;
   margin: 0 auto;
-  /* Center align the container horizontally */
   margin-top: 60px;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: lightslategrey;
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -197,7 +217,6 @@ h2 {
 .loginherebtn {
   display: block;
   margin: 0 auto;
-  /* Center align the button horizontally */
   background-color: lightgreen;
   color: black;
   padding: 8px 16px;
@@ -208,7 +227,6 @@ h2 {
   text-align: center;
   font-size: 14px;
   max-width: 100px;
-  /* Adjust the max-width to change the button width */
 }
 
 .loginherebtn:hover {
@@ -218,8 +236,7 @@ h2 {
 
 .create-account-btn {
   display: block;
-  margin: 0 auto;
-  /* Center align the button horizontally */
+  margin: 20px auto 0;
   background-color: lightcoral;
   color: white;
   padding: 8px 16px;
@@ -228,9 +245,7 @@ h2 {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  margin-top: 20px;
   max-width: 200px;
-  /* Adjust the max-width to change the horizontal size */
 }
 
 .create-account-btn:hover {
